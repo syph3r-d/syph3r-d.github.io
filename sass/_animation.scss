@@ -1,0 +1,23 @@
+@keyframes polygon {
+    0%{
+        transform: perspective(800px) rotateY(-4deg)
+    }
+    50%{
+        transform: perspective(1000px) rotateY(30deg)
+    }
+    100%{
+        transform: perspective(800px) rotateY(-4deg)
+    }
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(10px)
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
