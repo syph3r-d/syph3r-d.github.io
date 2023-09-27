@@ -1,13 +1,15 @@
 @keyframes polygon {
     0%{
-        transform: perspective(800px) rotateY(0deg)
+        transform: perspective(800px) rotateY(0deg);
+
     }
 
     30%{
-        transform: perspective(800px) rotateY(360deg)
+        transform: perspective(800px) rotateY(360deg);
     }
     100%{
         transform: perspective(800px) rotateY(360deg)
+
 
     }
 }
@@ -18,16 +20,35 @@
     }
 
     30%{
-        transform: perspective(800px) rotateY(360deg)
-        rotateZ(90deg)
+        transform: perspective(1000px) rotateY(20deg)
         scale(0.8)
     }
     100%{
-        transform: perspective(800px) rotateY(360deg)
+        transform: perspective(800px) rotateY(0deg)
         scale(1)
 
     }
 }
+
+@keyframes fade-left {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    10%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    90%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+    
 
 @keyframes scroll {
     0%{
