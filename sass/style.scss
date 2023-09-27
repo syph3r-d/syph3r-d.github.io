@@ -26,9 +26,9 @@ body {
   &:hover {
     background-color: lighten($color: $primary-color, $amount: 5%);
   }
-  &-secondary{
+  &-secondary {
     background-color: $secondary-color;
-    &:hover{
+    &:hover {
       background-color: lighten($color: $secondary-color, $amount: 5%);
     }
   }
@@ -292,6 +292,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 70px;
+  ul{
+    line-height: 20px;
+  }
+  ul li::before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $primary-color; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
   .description {
     p {
       margin-bottom: 20px;
@@ -300,6 +311,9 @@ body {
   .right {
     flex-direction: row-reverse;
     text-align: right;
+    ul {
+      direction: rtl;
+    }
     .subtitle {
       left: unset;
       right: -20px;

@@ -12,9 +12,10 @@
     height: auto;
     gap: 150px;
     .headline {
-      min-height: 200px;
+      min-height: 300px;
+      overflow: hidden;
       .triangle {
-        top: -50%;
+        top: -20%;
         left: 10%;
         transform: scale(0.8);
       }
@@ -25,10 +26,18 @@
   }
   .project-showcase {
     text-align: center;
+
     .project {
       flex-direction: column;
+      ul{
+        text-align: start;
+      }
     }
     .right {
+        ul{
+            text-align: start;
+            direction: ltr;
+        };
       text-align: center;
       flex-direction: column;
     }
