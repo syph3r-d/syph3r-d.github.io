@@ -1,6 +1,7 @@
 @import "config";
 @import "animation";
 
+
 body {
   margin: 0;
   padding: 0;
@@ -72,6 +73,19 @@ body {
   // padding-top: 60px;
   justify-content: space-between;
   height: 100vh;
+  .image-self{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    img{
+      height: 100%;
+      position: absolute;
+
+      object-fit: cover;
+    }
+  }
   .headline {
     position: relative;
     flex: 1;
@@ -322,3 +336,5 @@ body {
   width: 100%;
   height: auto;
 }
+
+@import "mobile";

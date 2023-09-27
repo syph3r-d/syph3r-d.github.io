@@ -24,14 +24,15 @@
     <!-- or link to the CDN -->
     <link rel="stylesheet" href="url-to-cdn/splide.min.css" />
     <script>
-      document.addEventListener( 'DOMContentLoaded', function () {
-        new Splide( '#image-carousel' ).mount();
-        new Splide( '#image-carousel2' ).mount();
-        new Splide( '#image-carousel3' ).mount();
-        new Splide( '#image-carousel4' ).mount();
-        new Splide( '#image-carousel5' ).mount();
-        new Splide( '#image-carousel6' ).mount();
-      } );
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#image-carousel").mount();
+        new Splide("#image-carousel2").mount();
+        new Splide("#image-carousel3").mount();
+        new Splide("#image-carousel4").mount();
+        new Splide("#image-carousel5").mount();
+        new Splide("#image-carousel6").mount();
+        new Splide("#image-carousel7").mount();
+      });
     </script>
     <title>Sadeepa Dhananjaya</title>
   </head>
@@ -41,7 +42,7 @@
         <h4 class="firstname">Sadeepa</h4>
         <h4>Dhananjaya</h4>
       </div>
-      <ul>
+      <ul class="hide-sm">
         <li class="active"><a>Home</a></li>
         <li><a>Projects</a></li>
         <li><a>About Me</a></li>
@@ -53,6 +54,9 @@
         <div class="profile">
           <div class="mask"></div>
           <div class="circle">
+            <div class="image-self">
+              <img src="./img/me.png" alt="" />
+            </div>
             <div class="circle-sm circle-1">
               <i class="fa-solid fa-laptop-code fa-2xl"></i>
             </div>
@@ -86,7 +90,7 @@
           </div>
         </div>
       </div>
-      <div class="scroll">
+      <div class="scroll hide-sm">
         <img src="./img/mouse-45.png" alt="" />
       </div>
       <div class="about">
@@ -163,7 +167,9 @@
         <div class="project">
           <div class="details">
             <h1 class="subtitle text-primary">JUPITER</h1>
-            <h1 class="title text-primary">Employee Management System for "JUPITER" (Academic) </h1>
+            <h1 class="title text-primary">
+              Employee Management System for "JUPITER" (Academic)
+            </h1>
             <div class="description">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
               reiciendis natus nobis quasi, ut aliquid perferendis maiores optio
@@ -188,17 +194,21 @@
             </div>
           </div>
           <div class="image-container">
-            <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+            <section
+              id="image-carousel"
+              class="splide"
+              aria-label="Beautiful Images"
+            >
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide">
-                    <img src="./img/projects/Jupiter/1.png" alt="">
+                    <img src="./img/projects/Jupiter/thumb2.jpg" alt="" />
                   </li>
                   <li class="splide__slide">
-                    <img src="./img/projects/Jupiter/2.png" alt="">
+                    <img src="./img/projects/Jupiter/5.png" alt="" />
                   </li>
                   <li class="splide__slide">
-                    <img src="./img/projects/Jupiter/3.png" alt="">
+                    <img src="./img/projects/Jupiter/3.png" alt="" />
                   </li>
                 </ul>
               </div>
@@ -233,17 +243,21 @@
             </div>
           </div>
           <div class="image-container">
-            <section id="image-carousel2" class="splide" aria-label="Beautiful Images">
+            <section
+              id="image-carousel2"
+              class="splide"
+              aria-label="Beautiful Images"
+            >
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide">
-                    <img src="./img/projects/Jupiter/1.png" alt="">
+                    <img src="./img/projects/DevConnector/thumb.jpg" alt="" />
                   </li>
                   <li class="splide__slide">
-                    <img src="./img/projects/Jupiter/2.png" alt="">
+                    <img src="./img/projects/DevConnector/2.png" alt="" />
                   </li>
                   <li class="splide__slide">
-                    <img src="./img/projects/Jupiter/3.png" alt="">
+                    <img src="./img/projects/DevConnector/3.png" alt="" />
                   </li>
                 </ul>
               </div>
@@ -253,7 +267,7 @@
         <div class="project">
           <div class="details">
             <h1 class="subtitle text-primary">Mora-UXPlore 1.0</h1>
-            <h1 class="title text-primary">Mora-UXPlore 1.0 (Volunteer) </h1>
+            <h1 class="title text-primary">Mora-UXPlore 1.0 (Volunteer)</h1>
             <div class="description">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
               reiciendis natus nobis quasi, ut aliquid perferendis maiores optio
@@ -278,17 +292,21 @@
             </div>
           </div>
           <div class="image-container">
-            <section id="image-carousel3" class="splide" aria-label="Beautiful Images">
+            <section
+              id="image-carousel3"
+              class="splide"
+              aria-label="Beautiful Images"
+            >
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide">
-                    <img src="./img/projects/Jupiter/1.png" alt="">
+                    <img src="./img/projects/morauxplore/thumb.jpg" alt="" />
                   </li>
                   <li class="splide__slide">
-                    <img src="./img/projects/Jupiter/2.png" alt="">
+                    <img src="./img/projects/morauxplore/3.png" alt="" />
                   </li>
                   <li class="splide__slide">
-                    <img src="./img/projects/Jupiter/3.png" alt="">
+                    <img src="./img/projects/morauxplore/2.png" alt="" />
                   </li>
                 </ul>
               </div>
@@ -323,17 +341,175 @@
             </div>
           </div>
           <div class="image-container">
-            <section id="image-carousel4" class="splide" aria-label="Beautiful Images">
+            <section
+              id="image-carousel4"
+              class="splide"
+              aria-label="Beautiful Images"
+            >
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide">
-                    <img src="./img/projects/Jupiter/1.png" alt="">
+                    <img src="./img/projects/mercon/thumb.jpg" alt="" />
                   </li>
                   <li class="splide__slide">
-                    <img src="./img/projects/Jupiter/2.png" alt="">
+                    <img src="./img/projects/mercon/1.png" alt="" />
                   </li>
                   <li class="splide__slide">
-                    <img src="./img/projects/Jupiter/3.png" alt="">
+                    <img src="./img/projects/mercon/2.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="project">
+          <div class="details">
+            <h1 class="subtitle text-primary">Exmo-AdminPanel</h1>
+            <h1 class="title text-primary">Exmo-AdminPanel (Volunteer)</h1>
+            <div class="description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+              reiciendis natus nobis quasi, ut aliquid perferendis maiores optio
+              voluptate fugiat! Sit dolorum velit eum libero, consequuntur, nisi
+              vel esse voluptatum dolor quo sint cupiditate quia rem inventore
+              sequi veniam cum corrupti adipisci officia, porro temporibus odit
+              quam obcaecati. Tenetur placeat doloremque magnam eligendi beatae
+              quisquam porro nemo ad ea veritatis minus, dolores, dolor sunt
+              voluptatem, libero harum? Dignissimos, soluta. Culpa molestias
+              beatae qui, ut odit facere sapiente distinctio soluta! Illum
+              delectus expedita aliquid, neque temporibus, provident quibusdam,
+              nisi dolor officiis illo rem amet. Recusandae officia molestias
+              nulla itaque placeat eius?
+            </div>
+            <div class="technologies">
+              <h3>TECHNOLOGIES USED</h3>
+              <h4>React, Firebase, HTML, CSS</h4>
+            </div>
+            <div class="link">
+              <a href="">View Project</a>
+              <a href="">Github</a>
+            </div>
+          </div>
+          <div class="image-container">
+            <section
+              id="image-carousel5"
+              class="splide"
+              aria-label="Beautiful Images"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="./img/projects/exmoadmin/thumb.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./img/projects/exmoadmin/1.png" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./img/projects/exmoadmin/5.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="project right">
+          <div class="details">
+            <h1 class="subtitle text-primary">SmartPOS Application</h1>
+            <h1 class="title text-primary">
+              SmartPOS Application *Ongoing (Academic)
+            </h1>
+            <div class="description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+              reiciendis natus nobis quasi, ut aliquid perferendis maiores optio
+              voluptate fugiat! Sit dolorum velit eum libero, consequuntur, nisi
+              vel esse voluptatum dolor quo sint cupiditate quia rem inventore
+              sequi veniam cum corrupti adipisci officia, porro temporibus odit
+              quam obcaecati. Tenetur placeat doloremque magnam eligendi beatae
+              quisquam porro nemo ad ea veritatis minus, dolores, dolor sunt
+              voluptatem, libero harum? Dignissimos, soluta. Culpa molestias
+              beatae qui, ut odit facere sapiente distinctio soluta! Illum
+              delectus expedita aliquid, neque temporibus, provident quibusdam,
+              nisi dolor officiis illo rem amet. Recusandae officia molestias
+              nulla itaque placeat eius?
+            </div>
+            <div class="technologies">
+              <h3>TECHNOLOGIES USED</h3>
+              <h4>
+                React, MySQL, Nodejs, Express, Redux, ReactNative, HTML, CSS,
+                AWS RDS, AWS EC2
+              </h4>
+            </div>
+            <div class="link">
+              <a href="">View Project</a>
+              <a href="">Github</a>
+            </div>
+          </div>
+          <div class="image-container">
+            <section
+              id="image-carousel6"
+              class="splide"
+              aria-label="Beautiful Images"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="./img/projects/smartpos/thumb.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./img/projects/smartpos/5.png" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./img/projects/smartpos/4.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="project">
+          <div class="details">
+            <h1 class="subtitle text-primary">IESL Robo Games Website</h1>
+            <h1 class="title text-primary">
+              IESL Robo Games Website *Ongoing (Volunteer)
+            </h1>
+            <div class="description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+              reiciendis natus nobis quasi, ut aliquid perferendis maiores optio
+              voluptate fugiat! Sit dolorum velit eum libero, consequuntur, nisi
+              vel esse voluptatum dolor quo sint cupiditate quia rem inventore
+              sequi veniam cum corrupti adipisci officia, porro temporibus odit
+              quam obcaecati. Tenetur placeat doloremque magnam eligendi beatae
+              quisquam porro nemo ad ea veritatis minus, dolores, dolor sunt
+              voluptatem, libero harum? Dignissimos, soluta. Culpa molestias
+              beatae qui, ut odit facere sapiente distinctio soluta! Illum
+              delectus expedita aliquid, neque temporibus, provident quibusdam,
+              nisi dolor officiis illo rem amet. Recusandae officia molestias
+              nulla itaque placeat eius?
+            </div>
+            <div class="technologies">
+              <h3>TECHNOLOGIES USED</h3>
+              <h4>React, HTML, CSS</h4>
+            </div>
+            <div class="link">
+              <a href="">View Project</a>
+              <a href="">Github</a>
+            </div>
+          </div>
+          <div class="image-container">
+            <section
+              id="image-carousel7"
+              class="splide"
+              aria-label="Beautiful Images"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="./img/projects/robogames/thumb.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./img/projects/robogames/2.png" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./img/projects/robogames/3.png" alt="" />
                   </li>
                 </ul>
               </div>
@@ -349,10 +525,21 @@
         <div class="contact-links">
           <h2>Social</h2>
           <div class="links">
-            <a href=""><i class="fab fa-facebook fa-2x"></i></a>
-            <a href=""><i class="fab fa-instagram fa-2x"></i></a>
-            <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href=""><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.facebook.com/Sadeepa.sd"
+              ><i class="fab fa-facebook fa-2x"></i
+            ></a>
+            <a href="https://www.instagram.com/Syph3r_d"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+            <a href="https://github.com/syph3r-d"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/sadeepa-dhananjaya-341279243/"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+            <a href="mailto:sadeepaekanayaked@gmail.com"
+              ><i class="fa-solid fa-envelope fa-2x"></i
+            ></a>
           </div>
         </div>
       </div>

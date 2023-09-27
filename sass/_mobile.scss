@@ -1,0 +1,35 @@
+@media (max-width: 1300px) {
+  .hide-sm {
+    display: none !important;
+  }
+  body {
+    font-size: 1rem;
+  }
+  .hero {
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: auto;
+    gap: 100px;
+    .headline {
+      svg {
+        top: -50%;
+        left: 30%;
+        transform: scale(25%);
+      }
+    }
+  }
+  .skills {
+    padding: 20px;
+  }
+  .project-showcase {
+    text-align: center;
+    .project {
+      flex-direction: column;
+    }
+    .right {
+      text-align: center;
+      flex-direction: column;
+    }
+  }
+}
