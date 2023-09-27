@@ -7,6 +7,8 @@ const skills = [
 
 const headlineElement = document.getElementById("headline");
 
+headlineElement.classList.add("rotation")
+
 let currentIndex = 0;
 
 function updateSkill() {

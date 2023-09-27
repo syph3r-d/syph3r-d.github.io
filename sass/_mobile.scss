@@ -54,19 +54,23 @@
 }
 
 @media (max-width: "596px") {
-    .navbar{
-        height: 90px;
+  .navbar {
+    height: 90px;
+    ul{
+        padding: 0;
+        li{
+            padding: 0px 5px;
+        }
     }
+  }
+  #headline{
+    padding:0px 10px;
+  }
   .hide-sm {
     display: none !important;
   }
   .navbar {
     justify-content: center;
-    ul {
-      li {
-        padding: 0px 20px;
-      }
-    }
   }
   .circle {
     width: 300px;
@@ -135,6 +139,29 @@
       grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
       img {
         height: 50px;
+      }
+    }
+  }
+
+  .footer {
+    .name {
+      padding: 0;
+      line-height: 20px;
+      h1 {
+        font-size: 0.95rem;
+      }
+      h2 {
+        font-size: 0.8rem;
+      }
+    }
+    .contact-links {
+      h2 {
+        font-size: 0.8rem;
+      }
+    }
+    .links {
+      i {
+        font-size: 0.9rem;
       }
     }
   }
