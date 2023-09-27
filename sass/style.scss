@@ -1,7 +1,6 @@
 @import "config";
 @import "animation";
 
-
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@ body {
   background-color: #eeeeee;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-x:hidden ;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -35,8 +34,9 @@ body {
     gap: 10px;
   }
   ul {
+    text-decoration: none;
     .active {
-      background-color: $primary-color;
+      background-position: 0px 80px;
       color: white;
     }
     display: flex;
@@ -46,6 +46,14 @@ body {
     margin: 0;
     align-items: center;
     li {
+      background-image: linear-gradient(
+        0deg,
+        $primary-color 50%,
+        transparent 50%
+      );
+      background-size: 100% 300%;
+      transition: all 0.5s ease-in-out;
+      background-position: 0px 0px;
       height: 100%;
       width: 100%;
       padding: 0 40px;
@@ -54,14 +62,11 @@ body {
       justify-content: center;
       white-space: nowrap;
       list-style: none;
+      font-weight: 600;
       cursor: pointer;
       &:hover {
         background-color: $primary-color;
         color: white;
-      }
-      a {
-        text-decoration: none;
-        font-weight: 600;
       }
     }
   }
@@ -73,13 +78,13 @@ body {
   // padding-top: 60px;
   justify-content: space-between;
   height: 100vh;
-  .image-self{
+  .image-self {
     height: 500px;
     width: 500px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    img{
+    img {
       height: 100%;
       position: absolute;
 
@@ -223,7 +228,7 @@ body {
   }
   .stacks {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax( 1fr,500px));
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 500px));
     gap: 50px;
   }
   .skill {
@@ -233,7 +238,7 @@ body {
   .stack-container {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax( 200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     place-items: center;
     gap: 50px;
     img {
@@ -249,20 +254,20 @@ body {
   }
 }
 
-.project-showcase{
+.project-showcase {
   padding: 40px 100px;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  .right{
+  .right {
     flex-direction: row-reverse;
     text-align: right;
-    .subtitle{
+    .subtitle {
       left: unset;
       right: -20px;
     }
   }
-  .subtitle{
+  .subtitle {
     opacity: 6%;
     width: 400px;
     white-space: nowrap;
@@ -272,7 +277,7 @@ body {
     font-size: 4rem;
     position: absolute;
   }
-  .title{
+  .title {
     font-size: 2.5rem;
   }
   .header-text {
@@ -281,50 +286,50 @@ body {
     font-weight: 600;
     padding: 20px 0;
   }
-  .project{
+  .project {
     display: flex;
-    gap:50px;
-    .details{
+    gap: 50px;
+    .details {
       position: relative;
-      flex:1;
+      flex: 1;
     }
-    .image-container{
-      flex:1;
+    .image-container {
+      flex: 1;
     }
-    .technologies{
+    .technologies {
       line-height: 10px;
-      h4{
+      h4 {
         padding-left: 30px;
       }
     }
   }
 }
 
-.footer{
+.footer {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   background-color: #222831;
   color: white;
   padding: 20px 0;
-  .name{
+  .name {
     padding-left: 20px;
     text-align: center;
     line-height: 10px;
-    h2{
+    h2 {
       font-weight: 200;
     }
   }
-  .contact-links{
+  .contact-links {
     text-align: center;
-    .links{
+    .links {
       display: flex;
       gap: 10px;
     }
-    a{
+    a {
       text-decoration: none;
       color: white;
-      &:hover{
+      &:hover {
         color: $primary-color;
       }
     }

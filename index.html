@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <script src="scripts/splide.min.js"></script>
+    <script src="scripts/scroll.js"></script>
     <!-- Link to the file hosted on your server, -->
     <link rel="stylesheet" href="scripts/splide.min.css" />
 
@@ -38,21 +39,21 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="name">
+      <div class="name hide-sm">
         <h4 class="firstname">Sadeepa</h4>
         <h4>Dhananjaya</h4>
       </div>
-      <ul class="hide-sm">
-        <li class="active"><a>Home</a></li>
-        <li><a>Projects</a></li>
-        <li><a>About Me</a></li>
-        <li><a>Contact</a></li>
+      <ul >
+        <li class="nav-btn" data-target="home" id="home-btn">Home</li>
+        <li data-target="about" class="nav-btn" id="about-btn">About Me</li>
+        <li data-target="skills" class="nav-btn" id="skills-btn">Skills</li>
+        <li data-target="projects" class="nav-btn" id="projects-btn">Projects</li>
+        <li data-target="contact" class="nav-btn" id="contact-btn">Contact</li>
       </ul>
     </div>
     <div class="body">
-      <div class="hero">
+      <section class="hero" id="home">
         <div class="profile">
-          <div class="mask"></div>
           <div class="circle">
             <div class="image-self">
               <img src="./img/me.png" alt="" />
@@ -89,11 +90,11 @@
             <h1 class="text-primary">WEB DEVELOPER</h1>
           </div>
         </div>
-      </div>
+      </section>
       <div class="scroll hide-sm">
         <img src="./img/mouse-45.png" alt="" />
       </div>
-      <div class="about">
+      <section class="about" id="about">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 300"
@@ -125,8 +126,8 @@
             significant contributions to the field of computer science.
           </p>
         </div>
-      </div>
-      <div class="skills">
+      </section>
+      <section class="skills" id="skills">
         <div class="header-text">
           <h1>SKILLS</h1>
         </div>
@@ -159,8 +160,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="project-showcase">
+      </section>
+      <section class="project-showcase" id="projects">
         <div class="header-text">
           <h1>PROJECT SHOWCASE</h1>
         </div>
@@ -194,7 +195,7 @@
             </div>
           </div>
           <div class="image-container">
-            <section
+            <div
               id="image-carousel"
               class="splide"
               aria-label="Beautiful Images"
@@ -212,7 +213,7 @@
                   </li>
                 </ul>
               </div>
-            </section>
+            </div>
           </div>
         </div>
         <div class="project right">
@@ -243,7 +244,7 @@
             </div>
           </div>
           <div class="image-container">
-            <section
+            <div
               id="image-carousel2"
               class="splide"
               aria-label="Beautiful Images"
@@ -261,7 +262,7 @@
                   </li>
                 </ul>
               </div>
-            </section>
+            </div>
           </div>
         </div>
         <div class="project">
@@ -292,7 +293,7 @@
             </div>
           </div>
           <div class="image-container">
-            <section
+            <div
               id="image-carousel3"
               class="splide"
               aria-label="Beautiful Images"
@@ -310,7 +311,7 @@
                   </li>
                 </ul>
               </div>
-            </section>
+            </div>
           </div>
         </div>
         <div class="project right">
@@ -341,7 +342,7 @@
             </div>
           </div>
           <div class="image-container">
-            <section
+            <div
               id="image-carousel4"
               class="splide"
               aria-label="Beautiful Images"
@@ -359,7 +360,7 @@
                   </li>
                 </ul>
               </div>
-            </section>
+            </div>
           </div>
         </div>
         <div class="project">
@@ -390,7 +391,7 @@
             </div>
           </div>
           <div class="image-container">
-            <section
+            <div
               id="image-carousel5"
               class="splide"
               aria-label="Beautiful Images"
@@ -408,7 +409,7 @@
                   </li>
                 </ul>
               </div>
-            </section>
+            </div>
           </div>
         </div>
         <div class="project right">
@@ -444,7 +445,7 @@
             </div>
           </div>
           <div class="image-container">
-            <section
+            <div
               id="image-carousel6"
               class="splide"
               aria-label="Beautiful Images"
@@ -462,7 +463,7 @@
                   </li>
                 </ul>
               </div>
-            </section>
+            </div>
           </div>
         </div>
         <div class="project">
@@ -495,7 +496,7 @@
             </div>
           </div>
           <div class="image-container">
-            <section
+            <div
               id="image-carousel7"
               class="splide"
               aria-label="Beautiful Images"
@@ -513,11 +514,11 @@
                   </li>
                 </ul>
               </div>
-            </section>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="footer">
+      </section>
+      <section class="footer" id="contact">
         <div class="name">
           <h2>CONTACT ME</h2>
           <h1>Sadeepa Dhananjaya</h1>
@@ -542,7 +543,8 @@
             ></a>
           </div>
         </div>
-      </div>
+      </s>
     </div>
   </body>
+  <script src="scripts/navbar-active.js"></script>
 </html>
