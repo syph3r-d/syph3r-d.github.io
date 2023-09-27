@@ -1,14 +1,34 @@
 @keyframes polygon {
     0%{
-        transform: perspective(800px) rotateY(-4deg)
+        transform: perspective(800px) rotateY(0deg)
     }
-    50%{
-        transform: perspective(1000px) rotateY(30deg)
+
+    30%{
+        transform: perspective(800px) rotateY(360deg)
     }
     100%{
-        transform: perspective(800px) rotateY(-4deg)
+        transform: perspective(800px) rotateY(360deg)
+
     }
 }
+@keyframes polygon-morph {
+    0%{
+        transform: perspective(800px) rotateY(0deg)
+        scale(1)
+    }
+
+    30%{
+        transform: perspective(800px) rotateY(360deg)
+        rotateZ(90deg)
+        scale(0.8)
+    }
+    100%{
+        transform: perspective(800px) rotateY(360deg)
+        scale(1)
+
+    }
+}
+
 
 @keyframes float {
     0%{
