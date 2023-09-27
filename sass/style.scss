@@ -283,7 +283,7 @@ body {
     width: 400px;
     white-space: nowrap;
     overflow: hidden;
-    top: -60px;
+    top: -30px;
     left: -20px;
     font-size: 4rem;
     position: absolute;
@@ -301,6 +301,9 @@ body {
     display: flex;
     gap: 50px;
     .details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
       position: relative;
       flex: 1;
     }
@@ -308,7 +311,7 @@ body {
       flex: 1;
     }
     .technologies {
-      line-height: 10px;
+      line-height: 30px;
       h4 {
         padding-left: 30px;
         line-height: 30px;
@@ -321,19 +324,24 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   background-color: #222831;
   color: white;
+  height: 150px;
   padding: 20px 0;
   .name {
     padding-left: 20px;
     text-align: center;
-    line-height: 10px;
+    line-height: 30px;
     h2 {
       font-weight: 200;
     }
   }
   .contact-links {
     text-align: center;
+    h2{
+      margin-bottom: 20px;
+    }
     .links {
       display: flex;
       gap: 10px;
