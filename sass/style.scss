@@ -13,6 +13,21 @@ body {
   scroll-behavior: smooth;
 }
 
+.btn {
+  padding: 10px 10px;
+  background-color: $primary-color;
+  color: white;
+  width: fit-content;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:hover {
+    background-color: lighten($color: $primary-color, $amount: 5%);
+  }
+}
+
 .navbar {
   overflow: hidden;
   width: 100%;
@@ -90,15 +105,13 @@ body {
       object-fit: cover;
     }
   }
-  .rotation {
-    animation: polygon 3s ease-in-out infinite;
-  }
   .headline {
     position: relative;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
     .headline-text {
       z-index: 1;
       text-align: center;
@@ -114,7 +127,6 @@ body {
       top: 20%;
       svg {
         filter: drop-shadow(10px 50px 10px rgb(0 0 0 / 0.2));
-        animation: polygon-morph 3s ease-in-out infinite;
       }
     }
   }
@@ -273,7 +285,12 @@ body {
   padding: 40px 100px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 70px;
+  .description {
+    p {
+      margin-bottom: 20px;
+    }
+  }
   .right {
     flex-direction: row-reverse;
     text-align: right;
@@ -321,6 +338,16 @@ body {
         line-height: 30px;
       }
     }
+
+    .link {
+      width: 100%;
+      display: flex;
+    }
+  }
+}
+.right {
+  .link {
+    justify-content: end;
   }
 }
 
