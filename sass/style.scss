@@ -26,6 +26,12 @@ body {
   &:hover {
     background-color: lighten($color: $primary-color, $amount: 5%);
   }
+  &-secondary{
+    background-color: $secondary-color;
+    &:hover{
+      background-color: lighten($color: $secondary-color, $amount: 5%);
+    }
+  }
 }
 
 .navbar {
