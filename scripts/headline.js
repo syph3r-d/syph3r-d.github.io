@@ -9,12 +9,11 @@ let currentIndex = 0;
 
 function updateSkill() {
   headlines.forEach((headlineElement, index) => {
-    headlineElement.style.opacity = "0";
     headlineElement.style.animation = "none";
     setTimeout(() => {
       headlineElement.innerHTML = skills[currentIndex];
       headlineElement.style.animation = "fade-left 3s ease-in-out"; 
-      headlineElement.style.animationDelay = `${index * 0.01}s`;
+      headlineElement.style.animationDelay = `${index * 0.015}s`;
     });
   });
 
