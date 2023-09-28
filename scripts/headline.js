@@ -9,17 +9,17 @@ let currentIndex = 0;
 
 function updateSkill() {
   headlines.forEach((headlineElement, index) => {
-    headlineElement.style.animation = "none";
+    headlineElement.classList.remove('fade-left')
     setTimeout(() => {
       headlineElement.innerHTML = skills[currentIndex];
-      headlineElement.style.animation = "fade-left 3s ease-in-out"; 
+      headlineElement.classList.add('fade-left')
       headlineElement.style.animationDelay = `${index * 0.015}s`;
-    });
+    },500);
   });
 
   currentIndex = (currentIndex + 1) % skills.length;
 
-  setTimeout(updateSkill, 3000);
+  setTimeout(updateSkill, 4000);
 }
 
 updateSkill();
