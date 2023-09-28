@@ -184,6 +184,28 @@ body {
   border-radius: 50%;
   background-image: linear-gradient(17deg, #00adb5 8.02%, #4ff7ff 91.69%);
 }
+.circle-sm::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: linear-gradient(17deg, #00adb5 8.02%, #4ff7ff 91.69%);
+  filter: blur(10px);
+  opacity: 0.5;
+}
+.circle-sm::after{
+  content: "";
+  position: absolute;
+  bottom:-20px;
+  width: 100%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: rgb(43, 213, 255);
+  filter: blur(10px);
+  opacity: 0.5;
+
+}
 .circle-2 {
   right: 0px;
   i {

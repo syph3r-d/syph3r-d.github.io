@@ -10,12 +10,12 @@ let currentIndex = 0;
 function updateSkill() {
   headlines.forEach((headlineElement, index) => {
     headlineElement.style.opacity = "0";
-    headlineElement.style.animation = "none"; // Clear the animation
+    headlineElement.style.animation = "none";
     setTimeout(() => {
       headlineElement.innerHTML = skills[currentIndex];
-      headlineElement.style.animation = "fade-left 3s ease-in-out"; // Apply animation
+      headlineElement.style.animation = "fade-left 3s ease-in-out"; 
       headlineElement.style.animationDelay = `${index * 0.01}s`;
-    }); // Small delay to allow clearing animation
+    });
   });
 
   currentIndex = (currentIndex + 1) % skills.length;
@@ -23,5 +23,5 @@ function updateSkill() {
   setTimeout(updateSkill, 3000);
 }
 
-setTimeout(updateSkill);
+updateSkill();
 
